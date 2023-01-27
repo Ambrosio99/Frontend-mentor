@@ -1,0 +1,128 @@
+body {
+  max-width: 1440px;
+  margin: 0px auto;
+  background-color: hsl(30, 38%, 92%);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 780px;
+}
+
+.box-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 600px;
+}
+
+.box-content img {
+  max-width: 100%;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.img-mobile {
+  display: none;
+}
+.img-desktop {
+  display: block;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+  background-color: white;
+  place-items: start;
+  padding: 2rem;
+  border-radius: 0px 8px 8px 0px;
+}
+.span-title {
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.product-title {
+  font-family: fraunces;
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.product-intro {
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.4rem;
+}
+
+.box-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.h1-price {
+  font-family: fraunces;
+  font-weight: 700;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+}
+.span-price {
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+.box-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 0px;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 0.875rem;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.box-cart img {
+  max-width: 100%;
+  padding: 6px;
+}
+
+.box-cart:hover {
+  background-color: hsl(159, 39%, 30%);
+}
+
+/* Responsive */
+
+@media (max-width: 620px) {
+  .box-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 20px;
+  }
+  .box-content img {
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .img-mobile {
+    display: block;
+  }
+  .img-desktop {
+    display: none;
+  }
+
+  .box-text {
+    gap: 16px;
+    justify-content: center;
+    border-radius: 0px 0px 8px 8px;
+  }
+}
