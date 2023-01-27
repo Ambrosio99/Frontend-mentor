@@ -96,7 +96,6 @@ body {
   max-width: 100%;
   padding: 6px;
 }
-
 .box-cart:hover {
   background-color: hsl(159, 39%, 30%);
 }
